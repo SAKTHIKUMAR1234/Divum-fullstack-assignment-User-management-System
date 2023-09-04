@@ -1,0 +1,128 @@
+body{
+  font-size: 16px;
+  font-family: 'Poppins', sans-serif;
+  /*background-image: linear-gradient(to right, #6e87ff, #6e8dff, #6e93ff, #7099ff, #729fff, #75a3fe, #79a6fc, #7daafb, #82acf8, #87aef5, #8baff1, #90b1ee);*/
+}
+
+
+
+  .btn-manage{
+    width: 80px; 
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+  }
+
+
+  .styled-table {
+    margin: 25px 0;
+    font-size: 0.9em;
+    min-width: max-content;
+    border-collapse: collapse;
+    border-radius: 30px;
+    border-style: hidden; 
+    box-shadow: 0 0 0 2px #000000;
+    overflow: hidden;
+}
+
+.styled-table thead tr {
+  background-color: #FFA500;
+  color: #ffffff;
+  text-align: center;
+  height: 4rem;
+}
+
+
+.styled-table th,td {
+    padding: 12px 15px;
+}
+
+
+.styled-table tbody tr {
+  border-bottom: 1px solid #dddddd;
+}
+
+tr:nth-child(even) {
+  background-color: rgb(190, 197, 190);
+  
+}
+
+.body{
+  justify-content: center;
+}
+
+
+.action-cls{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  min-width: 12rem;
+
+}
+
+.main-form{
+  width: 85%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 5%;
+}
+
+.main-form-div{
+  min-width: 85%;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: repeat(6,1rem);
+  text-align: center;
+}
+
+textarea,input{
+  width: 100%;
+  height: fit-content;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 7px;
+  background-color: #f8f8f8;
+  font-size: 12px;
+  resize: none;
+}
+
+
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.error{
+  box-shadow: 0 0 2em red;
+}
+
+
+
+.btn {
+
+  color: rgb(255, 255, 255);
+  background-color: #111;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  font-size: 14px;
+  min-width: 80px;
+  width: fit-content;
+  height: 30px;
+  font-weight: bold;
+  margin-right: 0.6rem;
+}
+
+.btn:hover{
+  cursor: pointer;
+  opacity: 0.7;
+}
+
+

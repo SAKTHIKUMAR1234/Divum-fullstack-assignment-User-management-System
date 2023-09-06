@@ -12,6 +12,11 @@ app.use(bodyparser.urlencoded({extended:true}))
 app.use(User);
 
 
+
+
 app.listen(5000,()=>{
     console.log('Server is running on port number : --> 5000');
 });
+
+
+module.exports = app;

@@ -1,3 +1,10 @@
+
+
+export function currentDateString(){
+    const date=new Date();
+    return (date.getFullYear()+"-"+((date.getMonth()+1)+"").padStart(2,'0')+"-"+((date.getDate()+"").padStart(2,'0')));
+}
+
 export function emailValidation(email) {
 
     if(email==='') return false;
@@ -40,18 +47,6 @@ export function addressValidation(address) {
     if(address==='') return false;
 
     if(address.length>50) return false;
-
-    var notallowedCharacters = "!$%^&*+={][}><?|";
-
-    
-    for (var i = 0; i < notallowedCharacters.length; i++) {
-      var char = notallowedCharacters.charAt(i);
-      
-
-      if (address.indexOf(char) != -1) {
-        return false; 
-      }
-    }
     
     return true; 
 }

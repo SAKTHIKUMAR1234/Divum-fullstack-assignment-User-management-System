@@ -1,7 +1,8 @@
 const express=require('express')
 const router=express.Router();
 const service=require('../database/services/operations')
-const responce=require('../util/responce')
+const responce=require('../util/responce');
+
 
 
 router.get('/getAll',async (req,res)=>{
@@ -9,6 +10,8 @@ router.get('/getAll',async (req,res)=>{
         res.status(responce.getStatus(result)).json(responce.getMessage(result));
     });
 });
+
+
 
 router.post('/add',async (req,res)=>{
     const body=req.body;
